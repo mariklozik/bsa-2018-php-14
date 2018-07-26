@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> bsa-14 </title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+<header>
+	<div class="container"> 
+		<div class="row">
+			<div class="c2">
+				<img src="http://www.genxsoftwares.com/assets/img/all%20logo/spring-logo.png">
+			</div>
+			<nav class="c6">
+				<ul>
+				   <li><a href="#" class="active">Home</a></li>
+				   <li><a href="#">Posts</a></li>
+				   <li><a href="#">About</a></li>
+				   <li><a href="#">Contacts</a></li>
+				</ul>
+			</nav>	
+			<nav class="c4">
+				<ul class="socials">
+				   <li>
+						<a href="#">
+							<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAMAAAAp4XiDAAAAWlBMVEUBc7L///++2+us0eVImsejzOM/lcXd7PUhhbzl8fdZo833+/3G4O2byOEPe7bv9vo1kMJnq9F7ttcRfLfU6PJtrtI4kcIti7+Eu9kcgrq11uhGmcZfp8692uvABhm9AAABmklEQVRIiZ2W14KDIBBFx0QEGwZN4rpx//83V5qOSov3CYEjMEwBspNoKwrGATgrREvP43Cc34+w09gfqT3S5OBQ/vQiZeUCpKrSjZDBRwAMxIHUwg9IifqIdEWYACi6PdI9YgTAo8NIHV1DrVMjJHIOK7EhxHSN+RhEgFik5Op7auRlTiGElwYxN3hTy/4Gl6k00uivwdiQB5lGIcavpiQklwhFP8jWNb2iC9Lbj1F6+ZNFkH5B0JzPHL9SlgGNTjruDNrg+Fu85oP7tbD5yp86/h2sIVrIdQzTXegJ2HZ/WxHdIq81qnqEFMC8CI54tA4D7kWwkJHwVZ+R7k5sRvo4rXNClFffdfsHTfRvrFZxMNRrtwX8xzdhoC1+Q8cPGFl3k4O3FugqExGBHCYRaZFbJiIUOX8awnCIpSE9DuQNaQKIDOQ1VSYhQmUY+g1CHakvjJjUZxNsArImWDP4yKXGXQtkbpd6b7guFjMkac425EJJulD4rpTXZW+R88ynIi7tFigT3PVUyK48SLILzx6prx9Xmoo84f4BjzAP9Vh7og0AAAAASUVORK5CYII=">
+						</a>
+				   </li>
+				   <li>
+						<a href="#">
+							<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAMAAAAp4XiDAAAAwFBMVEX///9ZL5JUL5JZLpJULpJaLZFZMJNNJo9XLJFSLJFPKpDX19JSMJNWL5KfjLn49vrGt9iYhrZ3VqTy7/ZUJ47V1NNhN5ZdO5fh2evr5/L59/mQdLbh2OqFZa5cOJdnRZ22q8eWerlsS57MwN14WqOpm7yBZqjAusjPzNKkj8PUyuJhQJqQeq+llbza3NSMca7Bsda3p9DKxtOxncvPzM5uTKKahb/AuMmypMDd29uagLCBX6VIII2LbbJ7W6nj5d2g9uO+AAAEvElEQVRIiYVWiULiSBBNH+kzHELn4hRQNERQB0FnFOb//2qruoMX7m5pTIR+/V6dnSg6s05/1N1Ws9m+eliV/fPvz62/eJiNe9Msm+7Gw233fzGDojoK55RShCmmnCLT2eo/UaM9gdWCMMZiIghh8KjI4d+pioo4QYQgMWGIgksIRgiARoMfNa3mClYJETPif+ARbv6Pyradc0Rnm5Fgfnu8CwZo4T8greGZuM4eJTSAcA9PwiMYc8fyDEHeIeSkDD+KY4LegLjeF0ynEi3GGmGxihlEONDAYggGiwUT7vhZ24M4AZhzDgEKHYfwEWVUoGPEzT5iUGQtXA2Xi3v77YO3S7CXy+s/r5mLMXgYzMd3WQd1oph33wX/td426fO9UMgSE1UXzZdd13jhDh7Q6QwGg87v1KZpChibtkVMwD9wZ9aQTFVwxI3Bv7I6jL29Lpfj5fL14tmmtu3dgTioUfDdhZSoDP7vTuUXe3ujbWufrhyDqgBpB08yVo0j+yhaTQznlFPKtdY0SfT8bi7X1l5CkLESAs1IYLKIUGIRDcbSr+fS0IQbrevnzU1d39inqQ5pdhi0rQvVoaYlwA0AEsPH24eX9V0t50/WXr2tbbo01Feqgnz2j5hoIpjr9aOF4zxJ5Lw78EG+WaqL2/Xk7cLaC8m5z2deRv3MVwbEq9eJujrh3PhiGvzGrNyZXCUSIG2AtLBsRAXxgtaDwoKyQ4impgYPy/2xd/8MmXmVSQMBDzl0AyPR0EGWfIx7g6hrODUVhGQnpZH5y8Y+5wk/QcBN2DqLfIhRpWcxXOerqHOUFMxMb2x6Zeg7C6VQi1nUU4HlBDEYBaoRQmV7Y/98gQAmi3Ys5P4EkVdQD7qB3NlN+yuEtjwL+yxMwq1h0bj24huETiJIi/jiCxR4uQu+TC6tXZ5DDo40Iy5AuIGS6Ap80Bep/VXrEwSjDImeRJXD0QMgd8oL+B8tenk+X6fp5s7QEGSTeACylBnzw/E9+9QMoVw6xa8naJTrFkdI6rPPKSC4iPpzFoYJQhaaYwUPy9DIaXtiYNWpYHgC2sxDNABlUJRYyf1oxbHIuJlWq/L25vqKGt8J0DD3EvZCb2qYMgvoN4HTFJqy34OSSoDHtPI658ZLMRPo5Tn4AnBq9qC63zt1JRTXozG4FeREa9SBO8u71D5P4BGdN13s5KoZSW4HLlRa+h7WiIEnLuUS2uzeJIimeuenX5k141hD80eLcT6ZTODKvU2u1k/p5kV4atDVDL9tM5S8NFBaFkVRlrfBgMJeQj5Bb8L1vBmxZfBGCM6Gp3GIQd7gsNzYp3WNoQaWJHiCtnCsaRpXD7urEbAUo1833i7bc43jBgOWzD7Ov8o1Y5wpKUVdQ4TrqbdaSY3l6GXtPp0w/WGgwelGtTEYL+NNJzRUCmJWn8+k4qDw2Pb9SZOQZ58Xr8dPQ6oXX0++ApsAewB+W37GhvYIq3Hg8m70zYqZw1PL91tY7PfngSPhYvUdAf5s4RSNg0ct33+BwidRjotzBMb6CO8seNCDtsDD0RsQlW/LHxHQV4874sIZ1wqBBaLE5MMfRH2oezwIR3BMtQKL5tA7P77AfAIVY3gXA/O1We8WxXfAPzYbZ4NcIok9AAAAAElFTkSuQmCC">
+						</a>
+				   </li>
+
+				   <li>
+						<a href="#">
+							<img src="http://www.awfullynicetours.com/portals/ant/Icons/Icon_Search-sm.png">
+						</a>
+				   </li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</header>
+
+<div class="content"> 
+	<div class="container">
+		<div class="row">
+			<main>
+				<div class="row">
+					<article class="c4">
+						<div class="article_image">
+							<img src="https://loremflickr.com/700/700">
+						</div>
+						<div class="article_meta">
+							<h2 class="article_title">
+								<a href="#">
+									Is Vinil Back? Lossless Sound In Retro Perspective
+								</a>
+							</h2>
+							<div class="article_auhor-date">								
+		                        <span>
+		                			<a href="#" class="article_author">Marik Lozik</a>
+		                		</span>,
+		                        <a href="#" class="article_date">
+		                            1 year ago                                            
+		                        </a>
+							</div>
+						</div>
+					</article>
+					<article class="c4">
+						<div class="article_image">
+							<img src="https://loremflickr.com/700/700">
+						</div>
+						<div class="article_meta">
+							<h2 class="article_title">
+								<a href="#">
+									Is Vinil Back? Lossless Sound In Retro Perspective
+								</a>
+							</h2>
+							<div class="article_auhor-date">								
+		                        <span>
+		                			<a href="#" class="article_author">Marik Lozik</a>
+		                		</span>,
+		                        <a href="#" class="article_date">
+		                            1 year ago                                            
+		                        </a>
+							</div>
+						</div>
+					</article>
+					<article class="c4">
+						<div class="article_image">
+							<img src="https://loremflickr.com/700/700">
+						</div>
+						<div class="article_meta">
+							<h2 class="article_title">
+								<a href="#">
+									Is Vinil Back? Lossless Sound In Retro Perspective
+								</a>
+							</h2>
+							<div class="article_auhor-date">								
+		                        <span>
+		                			<a href="#" class="article_author">Marik Lozik</a>
+		                		</span>,
+		                        <a href="#" class="article_date">
+		                            1 year ago                                            
+		                        </a>
+							</div>
+						</div>
+					</article>
+					<article class="c4">
+						<div class="article_image">
+							<img src="https://loremflickr.com/700/700">
+						</div>
+						<div class="article_meta">
+							<h2 class="article_title">
+								<a href="#">
+									Is Vinil Back? Lossless Sound In Retro Perspective
+								</a>
+							</h2>
+							<div class="article_auhor-date">								
+		                        <span>
+		                			<a href="#" class="article_author">Marik Lozik</a>
+		                		</span>,
+		                        <a href="#" class="article_date">
+		                            1 year ago                                            
+		                        </a>
+							</div>
+						</div>
+					</article>
+				</div>
+			</main>
+			<aside>
+				<div class="profile">
+					<img src="http://bestvoyage.in/wp-content/uploads/profile.png" class="profile_image">
+					<div class="profile_name">
+						Marian Lozynskyi
+					</div>
+					<div class="profile_desctiprion">
+						BSA student. Beginner php developer.
+					</div>
+				</div>
+			</aside>
+		</div>
+	</div>
+</div>
+
+<footer>
+	<div class="conatiner">
+		
+	</div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/scripts.js"></script>
+
+</body>
+</html>
